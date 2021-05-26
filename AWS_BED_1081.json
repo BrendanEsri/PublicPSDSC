@@ -1,0 +1,78 @@
+{
+    "AllNodes": [
+        {
+            "NodeName": "_____________________________",
+            "DataStoreTypes": [
+                "Relational",
+				"TileCache"
+            ],
+            "Role": [
+                "Server",
+                "Portal",
+                "DataStore",
+                "ServerWebAdaptor",
+                "PortalWebAdaptor"
+            ]
+		}
+    ],
+    "ConfigData": {
+        "Version": "10.8.1",
+        "ServerContext": "server",
+        "PortalContext": "portal",
+        "ServerRole": "GeneralPurposeServer",
+        "Credentials": {
+            "ServiceAccount": {
+                "UserName": "arcgis",
+                "Password": "ArcGIS123!",
+                "IsDomainAccount": false
+            }
+        },
+        "Server": {
+            "LicenseFilePath": "C:\\Software\\Server_Ent_Adv_AllExt.prvc",
+            "Installer": {
+                "Path": "C:\\Software\\ArcGIS_Server_Windows_1081_175203.exe",
+                "InstallDir": "C:\\Program Files\\ArcGIS\\Server",
+                "InstallDirPython": "C:\\Python27"
+            },
+            "ServerDirectoriesRootLocation": "C:\\arcgisserver\\directories",
+            "ConfigStoreLocation": "C:\\arcgisserver\\config-store",
+            "PrimarySiteAdmin": {
+                "UserName": "siteadmin",
+                "Password": "siteadmin1"
+            }
+        },
+        "Portal": {
+            "LicenseFilePath": "C:\\Software\\AllUTs_AllAddOnApps.json",
+            "PortalLicenseUserTypeId": "creatorUT",
+            "Installer": {
+                "Path": "C:\\Software\\Portal_for_ArcGIS_Windows_1081_175214.exe",
+                "InstallDir": "C:\\Program Files\\ArcGIS\\Portal",
+                "ContentDir": "C:\\initportalforarcgis\\content"
+            },
+            "ContentDirectoryLocation": "C:\\portalforarcgis\\content",
+            "EnableAutomaticAccountCreation": true,
+            "DefaultRoleForUser": "account_publisher",
+            "DefaultUserLicenseTypeIdForUser": "creatorUT",
+            "PortalAdministrator": {
+                "UserName": "portaladmin",
+                "Password": "portaladmin1",
+                "Email": "bbladdick@esri.com",
+                "SecurityQuestionIndex": 1,
+                "SecurityAnswer": "vanilla"
+            }
+        },
+        "DataStore": {
+            "ContentDirectoryLocation": "C:\\arcgisdatastore",
+            "Installer": {
+                "Path": "C:\\Software\\ArcGIS_DataStore_Windows_1081_175216.exe",
+                "InstallDir": "C:\\Program Files\\ArcGIS\\DataStore"
+            }
+        },
+        "WebAdaptor": {
+            "AdminAccessEnabled": true,
+            "Installer": {
+                "Path": "C:\\Software\\ArcGIS_Web_Adaptor_for_Microsoft_IIS_1081_175217.exe"
+            }
+        }
+    }
+}
